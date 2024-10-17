@@ -1,0 +1,21 @@
+.title {
+	margin: 0;
+	font-family: var(--second-family);
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.17;
+	color: var(--black);
+	margin-bottom: 24px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-color: var(--green);
+		width: 304px;
+		height: 8px;
+		top: 30px;
+		left: -230px;
+		z-index: -1;
+	}
+}
