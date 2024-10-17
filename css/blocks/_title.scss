@@ -9,6 +9,11 @@
 	line-height: 1.17;
 
 	color: var(--black);
+	text-shadow: 2px 2px 10px var(--black);
+
+	& span {
+		position: relative;
+	}
 
 	&::before {
 		content: '';
@@ -17,7 +22,6 @@
 		left: -230px;
 		width: 304px;
 		height: 8px;
-		z-index: -1;
 
 		background-color: var(--green);
 	}

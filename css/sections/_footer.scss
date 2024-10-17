@@ -4,6 +4,15 @@
 	padding-top: 48px;
 	padding-bottom: 38px;
 
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__navigation {
+		display: flex;
+		gap: 100px;
+	}
+
 	&__list {
 		list-style: none;
 
@@ -13,9 +22,13 @@
 
 	&__contacts {
 		list-style: none;
-
+		text-align: right;
 		margin: 0;
 		padding: 0;
+
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
 	}
 
 	&__item {
@@ -42,6 +55,9 @@
 		line-height: 1.71;
 
 		color: var(--white);
+	}
+	.svg-gap {
+		margin-right: 5px;
 	}
 
 	&__phone {
@@ -72,7 +88,13 @@
 		text-decoration-skip-ink: none;
 		color: var(--white);
 	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
+		margin-top: 20px;
+	}
 	&__copyright {
 		padding: 0;
 		margin: 0;
@@ -89,7 +111,21 @@
 }
 
 .social-list {
+	display: flex;
+	justify-content: space-between;
+	gap: 33px;
+
 	list-style: none;
-	margin: 0;
-	padding: 0;
+}
+
+.svg--gap {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+.pnohe--gap {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	justify-content: right;
 }

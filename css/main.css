@@ -11,6 +11,7 @@
   --text: #49484b;
   --background: #f2effa;
   --footer-bg: #0b0b0c;
+  --header-bg: #0b0b0c;
 }
 
 @font-face {
@@ -325,6 +326,13 @@ a {
   color: inherit;
   font-family: inherit;
   font-style: inherit;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--green);
+  transform: scale(1.1);
+  text-decoration: none;
 }
 
 address {
@@ -334,10 +342,6 @@ address {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 textarea {
@@ -366,6 +370,10 @@ svg * {
   font-size: 48px;
   line-height: 1.17;
   color: var(--black);
+  text-shadow: 2px 2px 10px var(--black);
+}
+.title span {
+  position: relative;
 }
 .title::before {
   content: "";
@@ -374,7 +382,6 @@ svg * {
   left: -230px;
   width: 304px;
   height: 8px;
-  z-index: -1;
   background-color: var(--green);
 }
 
@@ -400,10 +407,23 @@ svg * {
     padding: 0 20px;
   }
 }
+.header {
+  background-color: var(--header-bg);
+  height: 120px;
+}
+
 .footer {
   background-color: var(--footer-bg);
   padding-top: 48px;
   padding-bottom: 38px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__navigation {
+  display: flex;
+  gap: 100px;
 }
 .footer__list {
   list-style: none;
@@ -412,8 +432,12 @@ svg * {
 }
 .footer__contacts {
   list-style: none;
+  text-align: right;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .footer__item {
   font-family: var(--font-family);
@@ -434,6 +458,9 @@ svg * {
   font-size: 14px;
   line-height: 1.71;
   color: var(--white);
+}
+.footer .svg-gap {
+  margin-right: 5px;
 }
 .footer__phone {
   font-family: var(--font-family);
@@ -462,6 +489,12 @@ svg * {
           text-decoration-skip-ink: none;
   color: var(--white);
 }
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
 .footer__copyright {
   padding: 0;
   margin: 0;
@@ -476,7 +509,21 @@ svg * {
 }
 
 .social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 33px;
   list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+.svg--gap {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.pnohe--gap {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: right;
 }

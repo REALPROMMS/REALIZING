@@ -58,6 +58,13 @@ a {
 	color: inherit;
 	font-family: inherit;
 	font-style: inherit;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: var(--green);
+	transform: scale(1.1);
+	text-decoration: none;
 }
 
 address {
@@ -67,10 +74,6 @@ address {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
-}
-
-input[type='number'] {
-	-moz-appearance: textfield;
 }
 
 textarea {
