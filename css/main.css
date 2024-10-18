@@ -442,7 +442,6 @@ svg * {
 .header__top-button {
   box-shadow: 0px 0px 2px 2px var(--white);
   border-radius: 32px;
-  padding: 0px 16px;
   width: 140px;
   height: 48px;
   font-family: var(--font-family);
@@ -452,6 +451,7 @@ svg * {
   color: var(--white);
   display: flex;
   align-items: center;
+  justify-content: center;
   background: transparent;
   transition: all 0.3s ease;
 }
@@ -468,7 +468,7 @@ svg * {
   color: var(--white);
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 160%;
   text-transform: uppercase;
 }
@@ -476,6 +476,7 @@ svg * {
   background: var(--violet);
   padding: 15px 15px 10px 15px;
   border-radius: 100%;
+  margin-right: 16px;
 }
 .header__navigation-top {
   display: flex;
@@ -484,6 +485,37 @@ svg * {
 }
 .header__navigation-link {
   padding: 0px 16px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header__navigation-link::before {
+  content: "";
+  height: 1px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--green);
+  transition: all 0.5s ease;
+}
+.header__navigation-link:hover::before {
+  transform-origin: right;
+  width: 100%;
+}
+.header__navigation-link::after {
+  content: "";
+  height: 1px;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--green);
+  transition: all 0.5s ease;
+}
+.header__navigation-link:hover::after {
+  transform-origin: left;
+  width: 100%;
 }
 .header__contacts {
   display: flex;
@@ -493,7 +525,7 @@ svg * {
 .header__phone {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--white);
@@ -504,10 +536,6 @@ svg * {
   font-size: 14px;
   line-height: 1.71;
   color: var(--white);
-}
-
-.header__navigation-image {
-  margin-right: 16px;
 }
 
 .footer {
@@ -521,11 +549,12 @@ svg * {
 }
 .footer__navigation {
   display: flex;
+  gap: 100px;
 }
 .footer__list {
   list-style: none;
-  margin: 0 40px;
-  padding: 0 40px;
+  margin: 0;
+  padding: 0;
 }
 .footer__contacts {
   list-style: none;
@@ -542,18 +571,30 @@ svg * {
   font-size: 18px;
   line-height: 2.22;
   color: var(--white);
+  white-space: nowrap;
 }
 .footer__item--mod {
   font-weight: 400;
   font-size: 16px;
   line-height: 2;
   opacity: 0.7;
+  position: relative;
+}
+.footer__item--mod::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 20%;
+  width: 10px;
+  height: 3px;
+  color: var(--green);
 }
 .footer__address {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 14px;
   line-height: 1.71;
+  white-space: nowrap;
   color: var(--white);
 }
 .footer .svg-gap {
@@ -566,6 +607,7 @@ svg * {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--white);
+  white-space: nowrap;
 }
 .footer__time {
   margin: 0;
@@ -610,7 +652,7 @@ svg * {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   gap: 33px;
   list-style: none;
 }
