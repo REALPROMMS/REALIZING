@@ -10,14 +10,14 @@
 	}
 	&__navigation {
 		display: flex;
-		gap: 100px;
+		// gap: 100px;
 	}
 
 	&__list {
 		list-style: none;
 
-		margin: 0;
-		padding: 0;
+		margin: 0 40px;
+		padding: 0 40px;
 	}
 
 	&__contacts {
@@ -98,15 +98,21 @@
 	&__copyright {
 		padding: 0;
 		margin: 0;
+
 		font-family: var(--font-family);
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 171%;
+
 		color: var(--white);
 	}
 
 	&__copyright span {
 		color: #b5b5b6;
+	}
+
+	&__logotype {
+		min-width: 150px;
 	}
 }
 

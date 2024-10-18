@@ -1,5 +1,98 @@
 .header {
 	background-color: var(--header-bg);
 
-	height: 120px;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 0;
+
+		&-left {
+			display: flex;
+			align-items: center;
+		}
+		&-right {
+			display: flex;
+			align-items: center;
+			gap: 24px;
+		}
+		&-button {
+			box-shadow: 0px 0px 2px 2px var(--white);
+			border-radius: 32px;
+			padding: 0px 16px;
+			width: 140px;
+			height: 48px;
+			font-family: var(--font-family);
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 171%;
+			color: var(--white);
+			display: flex;
+			align-items: center;
+			background: transparent;
+
+			transition: all 0.3s ease;
+
+			&:hover {
+				box-shadow: 0px 0px 2px 2px var(--green);
+				background: var(--violet);
+			}
+		}
+	}
+
+	&__logotype {
+		min-width: 150px;
+		margin-right: 32px;
+	}
+
+	&__navigation {
+		display: flex;
+		color: var(--white);
+		font-family: var(--font-family);
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 160%;
+		text-transform: uppercase;
+
+		&-image {
+			background: var(--violet);
+			padding: 15px 15px 10px 15px;
+			border-radius: 100%;
+		}
+
+		&-top {
+			display: flex;
+			margin-left: 16px;
+			align-items: center;
+		}
+		&-link {
+			padding: 0px 16px;
+		}
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&__phone {
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.33;
+		letter-spacing: 0.03em;
+		color: var(--white);
+	}
+
+	&__address {
+		font-family: var(--font-family);
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1.71;
+
+		color: var(--white);
+	}
+}
+
+.header__navigation-image {
+	margin-right: 16px;
 }
