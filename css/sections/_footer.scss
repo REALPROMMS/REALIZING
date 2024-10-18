@@ -12,11 +12,13 @@
 	}
 	&__navigation {
 		display: flex;
+
 		gap: 100px;
 	}
 
 	&__list {
 		list-style: none;
+
 		margin: 0;
 		padding: 0;
 	}
@@ -24,11 +26,12 @@
 	&__contacts {
 		list-style: none;
 		text-align: right;
-		margin: 0;
-		padding: 0;
 
 		display: flex;
 		flex-direction: column;
+
+		margin: 0;
+		padding: 0;
 		gap: 15px;
 	}
 
@@ -52,15 +55,28 @@
 
 		position: relative;
 
-		// &__item--mod::after {
-		// 	position: absolute;
-		// 	content: '';
-		// 	top: 50%;
-		// 	left: 20%;
-		// 	width: 10px;
-		// 	height: 3px;
-		// 	color: var(--green);
-		// }
+		&::after {
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: -15%;
+
+			width: 16px;
+			height: 2px;
+
+			background: var(--green);
+		}
+		&-policy::after {
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: -11%;
+
+			width: 16px;
+			height: 2px;
+
+			background: var(--green);
+		}
 	}
 
 	&__address {
@@ -92,10 +108,12 @@
 	&__time {
 		margin: 0;
 		padding: 0;
+
 		font-family: var(--font-family);
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 1.71;
+
 		color: var(--white);
 	}
 
@@ -106,7 +124,12 @@
 		line-height: 2.29;
 		text-decoration: underline;
 		text-decoration-skip-ink: none;
+
 		color: var(--white);
+
+		position: relative;
+
+		margin-left: 23px;
 	}
 	&__bottom {
 		display: flex;
@@ -139,6 +162,7 @@
 .social-list {
 	display: flex;
 	justify-content: right;
+
 	gap: 33px;
 
 	list-style: none;
@@ -151,13 +175,23 @@
 
 .svg--gap {
 	display: flex;
-	gap: 5px;
 	align-items: center;
 	justify-content: right;
+
+	gap: 5px;
 }
 .pnohe--gap {
 	display: flex;
-	gap: 5px;
 	align-items: center;
 	justify-content: right;
+
+	gap: 5px;
+}
+
+// !media
+@media (max-width: 1024px) {
+}
+@media (max-width: 768) {
+}
+@media (max-width: 375) {
 }

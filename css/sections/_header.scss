@@ -6,6 +6,7 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
+
 		padding: 40px 0;
 
 		&-left {
@@ -15,6 +16,7 @@
 		&-right {
 			display: flex;
 			align-items: center;
+
 			gap: 24px;
 		}
 		&-button {
@@ -23,6 +25,7 @@
 
 			width: 140px;
 			height: 48px;
+
 			font-family: var(--font-family);
 			font-weight: 600;
 			font-size: 14px;
@@ -51,11 +54,14 @@
 
 	&__navigation {
 		display: flex;
+
 		color: var(--white);
+
 		font-family: var(--font-family);
 		font-weight: 600;
 		font-size: 12px;
 		line-height: 160%;
+
 		text-transform: uppercase;
 
 		&-image {
@@ -63,17 +69,21 @@
 			// padding: 15px 15px 10px 15px;
 			border-radius: 100%;
 			margin-right: 16px;
+
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
 			width: 50px;
 			height: 50px;
 		}
 
 		&-top {
 			display: flex;
-			margin-left: 16px;
+			flex-wrap: wrap;
 			align-items: center;
+
+			margin-left: 16px;
 		}
 		&-link {
 			padding: 0px 16px;
@@ -86,15 +96,18 @@
 				content: '';
 				height: 1px;
 				width: 0px;
+
 				position: absolute;
 				top: 0;
 				right: 0;
+
 				background: var(--green);
 				transition: all 0.5s ease;
 			}
 
 			&:hover::before {
 				transform-origin: right;
+
 				width: 100%;
 			}
 
@@ -102,9 +115,11 @@
 				content: '';
 				height: 1px;
 				width: 0px;
+
 				position: absolute;
 				bottom: 0;
 				left: 0;
+
 				background: var(--green);
 				transition: all 0.5s ease;
 			}
@@ -118,6 +133,7 @@
 	&__contacts {
 		display: flex;
 		flex-direction: column;
+
 		gap: 8px;
 	}
 
@@ -127,6 +143,7 @@
 		font-size: 14px;
 		line-height: 1.33;
 		letter-spacing: 0.03em;
+
 		color: var(--white);
 	}
 
@@ -138,4 +155,12 @@
 
 		color: var(--white);
 	}
+}
+
+// !media
+@media (max-width: 1024px) {
+}
+@media (max-width: 768) {
+}
+@media (max-width: 375) {
 }
