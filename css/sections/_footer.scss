@@ -1,3 +1,5 @@
+// !footer
+
 .footer {
 	background-color: var(--footer-bg);
 
@@ -150,6 +152,7 @@
 	display: flex;
 	gap: 5px;
 	align-items: center;
+	justify-content: right;
 }
 .pnohe--gap {
 	display: flex;

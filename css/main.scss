@@ -1,5 +1,4 @@
 // Базовые стили
-
 @import './base/root';
 @import './base/fonts';
 
@@ -11,15 +10,14 @@
 // Эффекты
 
 // Блоки
-
 @import './blocks/button';
 @import './blocks/title';
 @import './blocks/wrapper';
 @import './blocks/drop-down-menu';
 
 // Смысловые секции
-
 @import './sections/header';
 @import './sections/footer';
 
 // Страницы
+@import './pages/index';

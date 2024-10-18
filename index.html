@@ -18,69 +18,27 @@
 	<title>REALPROMMS</title>
 </head>
 
-<style>
-	.navigation {
-		padding: 50px;
-		background-color: bisque;
-	}
 
-	.navigation__description {
-		margin: 0;
-		margin-bottom: 20px;
-
-		font-family: var(--font-family);
-		font-weight: 500;
-		font-size: 18px;
-
-		color: var(--black);
-	}
-
-	.navigation__list {
-		display: inline-block;
-
-		margin: 0;
-		padding: 0;
-
-		font-family: var(--font-family);
-		font-weight: 600;
-		font-size: 15px;
-		line-height: 1.6;
-		list-style: none;
-		text-transform: uppercase;
-		text-decoration: none;
-
-		color: var(--black);
-	}
-
-	.navigation__link {
-		margin: 0 12px;
-		padding: 12px 0;
-
-		transition: all 0.2s ease;
-		transform-origin: left;
-
-		&:hover {
-			color: var(--green);
-			transform: scale(1.1);
-			text-decoration: underline;
-		}
-	}
-</style>
 
 <body>
 
+	<!-- шапка -->
 	<header class="header">
-		<!-- шапка -->
+
 		<div class="wrapper">
+
+			<!-- верхний header -->
 			<div class="header__top">
 
 				<div class="header__top-left">
+
 					<!-- логотип -->
 					<div class="header__logotype">
 						<a href="./home.html">
 							<img class="logo" src="./img/svg/logotype.svg" alt="логотип" width="224">
 						</a>
 					</div>
+
 					<!-- навигация -->
 					<nav class="header__navigation">
 
@@ -162,27 +120,28 @@
 				</div>
 
 				<!-- кнопка -->
-				<a class="header__top-button" href="#">заказать звонок</a>
+				<a class="header__top-button" id="button-main">заказать звонок</a>
 
 			</div>
 
+			<!-- нижний header -->
 			<!-- навигация по клику кнопки -->
 			<div class="header__bottom">
 
 				<!-- меню -->
-				<div class="drop-down-menu">
+				<div class="drop-down-menu" id="menu">
 
 					<!-- навигация -->
 					<div class="drop-down-menu__navigation">
 
 						<ul class="drop-down-menu__list">
-							<li class="drop-down-menur__item"><a href="#">Новые авто</a></li>
+							<li class="drop-down-menu__item"><a href="#">Новые авто</a></li>
 							<li class="drop-down-menu__item"><a href="#">Авто с пробегом</a></li>
 						</ul>
 
 						<ul class="drop-down-menu__list">
 							<li class="drop-down-menu__item"><a href="#">Услуги</a></li>
-							<li class="drop-down-menu__item drop-down-menu--mod"><a href="#">Трейд-ин</a></li>
+							<li class="drop-down-menu__item drop-down-menu__item--mod"><a href="#">Трейд-ин</a></li>
 							<li class="drop-down-menu__item drop-down-menu__item--mod"><a href="#">Автокредитование</a></li>
 						</ul>
 
@@ -212,16 +171,19 @@
 										stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
 								</svg>Магнитогорск, ул. Лизюкова, 12</address>
 						</a>
+
 						<a class="drop-down-menu__phone" href="tel:+78005006040"><span class="pnohe--gap"><svg width="20"
 									height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M6.64678 13.3527C10.4163 17.1223 14.0474 18.4501 16.1199 18.8529C16.8067 18.9864 17.4873 18.6532 17.8317 18.0441C18.199 17.3946 18.4599 16.7953 18.6595 16.2334C18.9008 15.5539 18.6867 14.7987 18.126 14.3452C17.4683 13.8134 16.7228 13.3058 15.9686 12.8849C15.2599 12.4894 14.3899 12.669 13.816 13.2428V13.2428C13.311 13.7479 12.569 13.9494 11.9329 13.6245C11.1259 13.2124 10.0094 12.4801 8.76463 11.2354C7.52013 9.99088 6.78779 8.87427 6.37555 8.06717C6.05064 7.43105 6.25216 6.68899 6.75725 6.18391V6.18391C7.33108 5.61008 7.51071 4.74008 7.11524 4.03145C6.69419 3.277 6.18645 2.5313 5.65443 1.87358C5.20112 1.31316 4.44632 1.09894 3.76703 1.34004C3.20488 1.53956 2.60539 1.80064 1.95556 2.16824C1.34668 2.51268 1.01359 3.19313 1.14704 3.87984C1.54973 5.95198 2.87724 9.58278 6.64678 13.3527Z"
 										stroke="white" stroke-width="2" stroke-miterlimit="10" />
-								</svg>+7 800 500 60 40</span></a>
+								</svg>+7 800 500 60 40</span>
+						</a>
 						<p class="drop-down-menu__time">Ежедневно с 9:00 - 20:00</p>
 
+						<!-- соц. сети -->
 						<div class="drop-down-menu__social-list">
-							соц. сети
+
 							<a href="#" class="social-list__item" target="_blank">
 								<svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -235,8 +197,6 @@
 										d="M1.46966 8.70952L15.7685 2.77426C17.1791 2.15625 21.965 0.176244 21.965 0.176244C21.965 0.176244 24.1752 -0.688966 23.9888 1.41464C23.9275 2.27985 23.4393 5.31047 22.9463 8.58829L21.4131 18.2958C21.4131 18.2958 21.2904 19.7172 20.2478 19.9644C19.2053 20.2116 17.4857 19.0992 17.1791 18.8496C16.9338 18.6642 12.5795 15.8832 10.9826 14.5236C10.5509 14.1527 10.0627 13.4088 11.0439 12.5435C13.2541 10.5041 15.8912 7.96791 17.4834 6.36108C18.2217 5.6171 18.9552 3.88667 15.8888 5.99028L7.23922 11.8661C7.23922 11.8661 6.25797 12.4841 4.41577 11.9255C2.57593 11.3717 0.429446 10.6277 0.429446 10.6277C0.429446 10.6277 -1.04479 9.69833 1.46966 8.70952Z"
 										fill="white" />
 								</svg></a>
-							</li>
-
 							<a href="#" class="social-list__item" target="_blank">
 								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -253,11 +213,14 @@
 					</div>
 
 				</div>
+
 			</div>
+
 		</div>
 
 	</header>
 
+	<!-- техническая навигация -->
 	<main class="navigation">
 
 		<div class="wrapper">
@@ -266,6 +229,7 @@
 			<p class="navigation__description">Это техническая страничка проекта Сильвер, на которой представлены все
 				свёрстанные странички.</p>
 
+			<!-- ссылки сайта -->
 			<ul class="navigation__list">
 				<li class="navigation__link"><a href="./html/home.html">Главная</a></li>
 				<li class="navigation__link"><a href="./html/used-cars.html">Список авто с пробегом</a></li>
@@ -283,8 +247,8 @@
 
 	</main>
 
+	<!-- подвал -->
 	<footer class="footer">
-		<!-- подвал -->
 
 		<div class="wrapper">
 
@@ -303,22 +267,21 @@
 					<li class="footer__item"><a href="#">Новые авто</a></li>
 					<li class="footer__item"><a href="#">Авто с пробегом</a></li>
 				</ul>
-
+				<!-- навигация -->
 				<ul class="footer__list">
 					<li class="footer__item"><a href="#">Услуги</a></li>
 					<li class="footer__item footer__item--mod"><a href="#">Трейд-ин</a></li>
 					<li class="footer__item footer__item--mod"><a href="#">Автокредитование</a></li>
 				</ul>
-
+				<!-- навигация -->
 				<ul class="footer__list">
 					<li class="footer__item"><a href="#">Сервис</a></li>
 					<li class="footer__item"><a href="#">Акции</a></li>
 					<li class="footer__item"><a href="#">О компании</a></li>
 					<li class="footer__item"><a href="#">Контакты</a></li>
 				</ul>
-
+				<!-- контакты -->
 				<div class="footer__contacts">
-					<!-- контакты -->
 					<a class="footer__address" href="#">
 						<address class="svg--gap"><svg width="20" height="20" viewBox="0 0 15 20" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -335,11 +298,13 @@
 								<path
 									d="M6.64678 13.3527C10.4163 17.1223 14.0474 18.4501 16.1199 18.8529C16.8067 18.9864 17.4873 18.6532 17.8317 18.0441C18.199 17.3946 18.4599 16.7953 18.6595 16.2334C18.9008 15.5539 18.6867 14.7987 18.126 14.3452C17.4683 13.8134 16.7228 13.3058 15.9686 12.8849C15.2599 12.4894 14.3899 12.669 13.816 13.2428V13.2428C13.311 13.7479 12.569 13.9494 11.9329 13.6245C11.1259 13.2124 10.0094 12.4801 8.76463 11.2354C7.52013 9.99088 6.78779 8.87427 6.37555 8.06717C6.05064 7.43105 6.25216 6.68899 6.75725 6.18391V6.18391C7.33108 5.61008 7.51071 4.74008 7.11524 4.03145C6.69419 3.277 6.18645 2.5313 5.65443 1.87358C5.20112 1.31316 4.44632 1.09894 3.76703 1.34004C3.20488 1.53956 2.60539 1.80064 1.95556 2.16824C1.34668 2.51268 1.01359 3.19313 1.14704 3.87984C1.54973 5.95198 2.87724 9.58278 6.64678 13.3527Z"
 									stroke="white" stroke-width="2" stroke-miterlimit="10" />
-							</svg>+7 800 500 60 40</span></a>
+							</svg>+7 800 500 60 40</span>
+					</a>
 					<p class="footer__time">Ежедневно с 9:00 - 20:00</p>
 
+					<!-- соц. сети -->
 					<div class="social-list">
-						<!-- соц. сети -->
+
 						<a href="#" class="social-list__item" target="_blank">
 							<svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -353,8 +318,6 @@
 									d="M1.46966 8.70952L15.7685 2.77426C17.1791 2.15625 21.965 0.176244 21.965 0.176244C21.965 0.176244 24.1752 -0.688966 23.9888 1.41464C23.9275 2.27985 23.4393 5.31047 22.9463 8.58829L21.4131 18.2958C21.4131 18.2958 21.2904 19.7172 20.2478 19.9644C19.2053 20.2116 17.4857 19.0992 17.1791 18.8496C16.9338 18.6642 12.5795 15.8832 10.9826 14.5236C10.5509 14.1527 10.0627 13.4088 11.0439 12.5435C13.2541 10.5041 15.8912 7.96791 17.4834 6.36108C18.2217 5.6171 18.9552 3.88667 15.8888 5.99028L7.23922 11.8661C7.23922 11.8661 6.25797 12.4841 4.41577 11.9255C2.57593 11.3717 0.429446 10.6277 0.429446 10.6277C0.429446 10.6277 -1.04479 9.69833 1.46966 8.70952Z"
 									fill="white" />
 							</svg></a>
-						</li>
-
 						<a href="#" class="social-list__item" target="_blank">
 							<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -371,8 +334,9 @@
 				</div>
 
 			</div>
-			<div class="footer__bottom">
 
+			<div class="footer__bottom">
+				<!-- политика кондифициальности -->
 				<a class="footer__confidence footer__item--mod" href="#"><span>Политика конфиденциальности</span></a>
 
 				<!-- копирайт -->
@@ -380,11 +344,13 @@
 						target="_blank"><span>Все права защищены.</span></a></p>
 
 			</div>
+
 		</div>
 
 	</footer>
 
 
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
