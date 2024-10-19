@@ -10,3 +10,5 @@ function toggleMenu() {
 }
 
 buttonEl.addEventListener('click', toggleMenu);
+
+// 	dropDownMenuEl.style.display = window.getComputedStyle(dropDownMenuEl).display === 'none' ? 'flex' : 'none';
