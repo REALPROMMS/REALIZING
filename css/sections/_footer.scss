@@ -157,20 +157,20 @@
 	&__logotype {
 		min-width: 150px;
 	}
-}
+	.social-list {
+		display: flex;
+		justify-content: right;
 
-.social-list {
-	display: flex;
-	justify-content: right;
+		gap: 33px;
 
-	gap: 33px;
+		list-style: none;
 
-	list-style: none;
+		color: var(--white);
 
-	// &__item {
-	// 	stroke-width: 1px;
-	// 	stroke: var(--violet);
-	// }
+		&__item:hover {
+			color: var(--green);
+		}
+	}
 }
 
 .svg--gap {
