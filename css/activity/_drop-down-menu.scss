@@ -2,9 +2,12 @@
 
 .drop-down-menu {
 	padding-bottom: 38px;
+	padding-top: 10px;
 
 	display: flex;
 	justify-content: space-between;
+
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
 
 	&__top {
 		display: flex;

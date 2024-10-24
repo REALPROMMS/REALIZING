@@ -10,11 +10,13 @@
 // Эффекты
 @import './effects/animation--open-menu';
 
+// Активные элементы
+@import './activity/drop-down-menu';
+
 // Блоки
 @import './blocks/button';
 @import './blocks/title';
 @import './blocks/wrapper';
-@import './blocks/drop-down-menu';
 
 // Смысловые секции
 @import './sections/header';
